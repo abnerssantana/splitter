@@ -1,6 +1,6 @@
 import re
 import os
-from PyPDF2 import PdfWriter, PdfReader
+from pypdf import PdfWriter, PdfReader
 
 def sanitize_filename(filename):
     # Substitui caracteres inválidos para nomes de arquivos por nada, exceto vírgulas
@@ -87,9 +87,10 @@ def split_pdfs_in_folder(input_folder, output_folder):
                 #print(f"Texto extraído: {page_text}")
 
 
-# Caminho da pasta de entrada e da pasta de saída
-input_folder = "comprovantes"
-output_folder = "pdfs"
+if __name__ == "__main__":
+    # Caminho da pasta de entrada e da pasta de saída
+    input_folder = "comprovantes"
+    output_folder = "pdfs"
 
-# Chama a função para dividir os PDFs na pasta
-split_pdfs_in_folder(input_folder, output_folder)
+    # Chama a função para dividir os PDFs na pasta
+    split_pdfs_in_folder(input_folder, output_folder)

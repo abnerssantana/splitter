@@ -2,9 +2,8 @@
 
 ## Softwares Necessários:
 
-1. Python 3: https://www.python.org/
-2. PyPDF2 (pip install PyPDF2)
-3. pdfplumber (pip install pdfplumber)
+1. Python 3.9+: https://www.python.org/
+2. Dependências: `pip install -r requirements.txt` (instala o pypdf, sucessor do PyPDF2 descontinuado)
 
 ## INSTRUÇÕES DE USO
 
